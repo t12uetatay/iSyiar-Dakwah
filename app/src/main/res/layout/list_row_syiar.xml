@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="4dp"
+    android:padding="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp">
+
+        <ImageView
+            android:id="@+id/ivplay"
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:padding="8dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_graphic"/>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_heart2"
+            android:layout_below="@+id/ivplay"
+            android:drawablePadding="4dp"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="8dp"
+            android:text="@string/app_name"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_toRightOf="@+id/ivplay">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/judul"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="@string/app_name"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+                android:layout_marginBottom="4dp"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/user"
+                android:layout_width="match_parent"
+                android:textColor="@color/colorAccent"
+                android:singleLine="true"
+                android:text="@string/app_name"
+                android:layout_height="wrap_content"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/deskripsi"
+                android:layout_width="match_parent"
+                android:maxLines="2"
+                android:text="@string/app_name"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</com.google.android.material.card.MaterialCardView>
